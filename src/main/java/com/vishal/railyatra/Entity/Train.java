@@ -53,5 +53,11 @@ public class Train {
 	public void setTraintype(String traintype) {
 		this.traintype = traintype;
 	}
+	public String getNumberofcoach() {
+		return numberofcoach;
+	}
+	public void setNumberofcoach(String numberofcoach) {
+		this.numberofcoach = numberofcoach;
+	}
 
 }
