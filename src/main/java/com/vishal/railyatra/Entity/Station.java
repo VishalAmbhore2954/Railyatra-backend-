@@ -19,6 +19,12 @@ public class Station {
 	
 	@Column(unique=true)
 	private String station_code;
+	
+	@Column
+	private String city;
+	
+	@Column
+	private String state;
 
 	public int getId() {
 		return id;
@@ -43,4 +49,21 @@ public class Station {
 	public void setStation_code(String station_code) {
 		this.station_code = station_code;
 	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	
 }

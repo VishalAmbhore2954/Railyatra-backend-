@@ -1,5 +1,7 @@
 package com.vishal.railyatra.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +34,10 @@ public class RouteServiceImpl implements RouteService{
 		route.setStation(s);
 		
 		return routeRepo.save(route);
+	}
+	
+	public List<Route> getRoutes(){
+		return routeRepo.findAll();
 	}
 
 }

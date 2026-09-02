@@ -1,5 +1,7 @@
 package com.vishal.railyatra.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,12 @@ public class StationServiceImpl implements StationService{
 	@Override
 	public Station createStation(Station station) {
 		return stationRepo.save(station);	
+	}
+	
+	@Override
+	public List<Station> getStations() {
+		// TODO Auto-generated method stub
+		return stationRepo.findAll();
 	}
 
 }
